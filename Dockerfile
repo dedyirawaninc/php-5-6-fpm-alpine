@@ -9,7 +9,6 @@ RUN apk add --update --no-cache autoconf
 RUN apk add --update --no-cache g++
 RUN apk add --update --no-cache imagemagick
 RUN apk add --update --no-cache imagemagick-dev
-RUN apk add --update --no-cache icu-data-full
 RUN apk add --update --no-cache icu-dev
 RUN apk add --update --no-cache libpng-dev
 RUN apk add --update --no-cache libtool
