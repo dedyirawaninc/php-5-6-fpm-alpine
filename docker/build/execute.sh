@@ -25,8 +25,6 @@ else
   IMAGE=${IMAGE}:${BRNCH}
 fi
 echo [$BUILD] [$BRNCH] [$GROUP] [$IMAGE]
-rm ./${BUILD}
-cp ./docker/build/${BUILD} ./${BUILD}
 cat ./${BUILD}
 ls -al
 if [ "$TYPE" == "Darwin" ]; then
