@@ -3,7 +3,7 @@ echo -e "\nBase Directory and Filename..."
 BASEDIR00="$( cd "$( dirname "$0" )" && pwd )"
 CURRDIR00=${BASEDIR00##*/}
 FILENAME=`basename $0`; FILE=$(echo $FILENAME | cut -d '.' -f 1)
-echo [$BASEDIR00] [$CURRDIR00] [$FILENAME] [$FILE]
+echo [${BASEDIR00}] [$CURRDIR00] [$FILENAME] [$FILE]
 echo "......."
 BASEDIR01=${BASEDIR00%/*}; CURRDIR01=${BASEDIR01##*/}
 BASEDIR02=${BASEDIR01%/*}; CURRDIR02=${BASEDIR02##*/}
@@ -12,7 +12,7 @@ echo [$BASEDIR01] [$CURRDIR01]
 echo [$BASEDIR02] [$CURRDIR02]
 echo [$BASEDIR03] [$CURRDIR03]
 echo "......."
-cd $BASEDIR00 && cd ../../
+cd ${BASEDIR00} && cd ../../
 BRNCH=$(git rev-parse --abbrev-ref HEAD) && echo [$BRNCH]
 BUILD="Dockerfile"
 COMPA=$(echo $FILE | cut -d '-' -f 1)
