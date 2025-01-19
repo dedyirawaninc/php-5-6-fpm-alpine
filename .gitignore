@@ -1,1 +1,2 @@
-./docker/*.txt
+docker/*.txt
+docker/token/*.txt
